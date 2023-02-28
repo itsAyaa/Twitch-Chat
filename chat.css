@@ -1,5 +1,5 @@
 html,body {
-    margin: auto;
+    margin: 0;
     color: hsl(340, 51%, 70%);
 }
 
@@ -37,14 +37,14 @@ html,body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2rem;
     
-    display: block;
     border-radius: 25px;
     background: linear-gradient(143deg, rgba(236,167,181,.3) 0%, rgba(232,152,207,.3) 37%, rgba(242,215,230,.3) 100%);
     box-sizing: border-box;
     padding: 1rem 10px;
-    max-width : fit-content;
-    margin-right: 3px;
-    margin-bottom: 10px;
+    max-width: fit-content;
+
+    margin-top: -5px;
+    margin-right: 1px;
     border: 1px solid;
     box-shadow: 1px 1px 4px;
 }
