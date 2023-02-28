@@ -1,0 +1,120 @@
+html,body {
+    margin: auto;
+    color: hsl(340, 51%, 70%);
+}
+
+#chat {
+    width: 400px;
+    height: 700px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#chat::-webkit-scrollbar {
+    display: none;
+}
+
+#chat ul {
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+#li-name {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 1.1rem;
+
+    display : inline-block;
+    border-radius: 25px;
+    background: linear-gradient(143deg, rgba(236,167,181,1) 0%, rgba(232,152,207,1) 37%, rgba(242,215,230,1) 100%);
+    box-sizing: border-box;
+    padding: 4px 10px 4px 10px;
+    margin-bottom: -10px;
+}
+
+#li-message  {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    
+    display: block;
+    border-radius: 25px;
+    background: linear-gradient(143deg, rgba(236,167,181,.3) 0%, rgba(232,152,207,.3) 37%, rgba(242,215,230,.3) 100%);
+    box-sizing: border-box;
+    padding: 1rem 10px;
+    max-width : fit-content;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    box-shadow: 1px 1px 4px;
+}
+
+#flag-b {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 1.1rem;
+
+    display : inline-block;
+    border-radius: 25px;
+    background: linear-gradient(143deg, rgb(122, 43, 74) 0%, rgb(160, 152, 232) 37%, rgb(245, 138, 174) 100%);
+    box-sizing: border-box;
+    padding: 4px 10px 4px 10px;
+    margin-bottom: -10px;
+}
+
+#flag-m {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 1.1rem;
+
+    display : inline-block;
+    border-radius: 25px;
+    background: linear-gradient(143deg, rgb(122, 43, 74) 0%, rgb(160, 247, 220) 37%, rgb(245, 138, 174) 100%);
+    box-sizing: border-box;
+    padding: 4px 10px 4px 10px;
+    margin-bottom: -10px;
+}
+
+#flag-v {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 1.1rem;
+
+    display : inline-block;
+    border-radius: 25px;
+    background: linear-gradient(143deg, rgb(122, 43, 74) 0%, rgb(180, 40, 150) 37%, rgb(245, 138, 174) 100%);
+    box-sizing: border-box;
+    padding: 4px 10px 4px 10px;
+    margin-bottom: -10px;
+}
+
+#flag-s {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 1.1rem;
+
+    display : inline-block;
+    border-radius: 25px;
+    background: linear-gradient(143deg, rgb(122, 43, 74) 0%, rgb(255, 185, 128) 37%, rgb(245, 138, 174) 100%);
+    box-sizing: border-box;
+    padding: 4px 10px 4px 10px;
+    margin-bottom: -10px;
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#chat li:last-of-type {
+    animation-name: slide-in-left;
+    animation-duration: 0.15s;
+    animation-timing-function: ease-in;
+}
